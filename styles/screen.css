@@ -12,6 +12,8 @@ body {
     background: var(--background_color);
     padding: 0 40px;
     text-align: center;
+    border-top: solid 10px var(--secondary-surface);
+    margin: 0;
 }
 
 nav {
@@ -26,6 +28,7 @@ nav ul {
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 nav ul li {
@@ -45,6 +48,7 @@ h1 {
     font-size: 8em;
     letter-spacing: -2px;
     border: thick double var(--secondary-surface);
+    box-shadow: 8px 4px 4px var(--main-surface);
 }
 
 h1 strong {
@@ -53,6 +57,24 @@ h1 strong {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px;
+}
+
+h2{
+    border: thick double var(--secondary-surface);
+    font-size: 2em;
+    margin-bottom: 0;
+    background-color: var(--main-surface);
+}
+
+ul{
+    text-align: left;
+    border: thick double var(--secondary-surface);
+    margin-top: 0;
+    font-size: 1.25em;
+}
+
+p{
+    font-size: 2em;
 }
 
 img.main-logo{

@@ -3,7 +3,7 @@ layout: layout.liquid
 title: About
 ---
 
-# About the 11ty **Boilerplate**
+# Who is the **INTerstella** Traveler?
 ## Some facts about me!
 - 1056 Cycles old
 - Born and raised in West Europa
