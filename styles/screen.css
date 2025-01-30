@@ -1,7 +1,15 @@
+:root{
+    --background_color : #1A1B41;
+    --main-surface : #28666E;
+    --secondary-surface : #7FDEFF;
+    --text-color :  #D3E8EE;
+    --pop-important : #632071;
+}
+
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
+    color: var(--text-color);
+    background: var(--background_color);
     padding: 0 40px;
     text-align: center;
 }
@@ -10,7 +18,7 @@ nav {
     margin: 40px auto 0 auto;
     width: 250px;
     border-radius: 50px;
-    background: #212431;
+    background: var(--main-surface);
 }
 
 nav ul {
@@ -36,13 +44,24 @@ nav ul li a {
 h1 {
     font-size: 8em;
     letter-spacing: -2px;
+    border: thick double var(--secondary-surface);
 }
 
 h1 strong {
     background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: no-repeat center/100% url(/images/SpaceCartoon.jpg) var(--text-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px;
+}
+
+img.main-logo{
+    display: inline;
+    height: 100%;
+    vertical-align: middle;
+    width: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 img.about {
