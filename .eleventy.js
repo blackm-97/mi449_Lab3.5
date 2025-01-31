@@ -8,7 +8,7 @@ module.exports = function(eleventyConfig) {
     return `<header class = "blog-header"> 
 <h1 class = "blog-title">${title}</h1> 
 <h2 class = "blog-author">${author}</h2>
-<time>${date}</time>
+<time >${date}</time>
 </header>`;
   });
 };
