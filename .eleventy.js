@@ -4,10 +4,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("styles");
 
-  eleventyConfig.addShortcode("blog-post", function(title, paragraph){
-    return `<section class = "blog-post"> 
-<h1>${title}</h1> 
-<p>${paragraph}</p> 
-</section>`;
+  eleventyConfig.addShortcode("blog-post", function(title, author, date){
+    return `<header class = "blog-header"> 
+<h1 class = "blog-title">${title}</h1> 
+<h2 class = "blog-author">${author}</h2>
+<time>${date}</time>
+</header>`;
   });
 };
